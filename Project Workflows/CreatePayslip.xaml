@@ -1,0 +1,251 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WriteToWord" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_TransactionItem" Type="InArgument(sd:DataRow)" />
+    <x:Property Name="in_TransactionNumber" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>902.4,5507.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>WriteToWord_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="38">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="70">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="1. Replaces data in the Word Template using the data from the Excel input file.&#xA;2. Saves the file as a .docx file&#xA;3. Converts .docx file to .pdf file&#xA;" DisplayName="Create Payslips" sap:VirtualizedContainerService.HintSize="702.4,5442.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Add output folder and folders for docx and pdf files if they don't exist, so no error occurs while saving the files. Uses if acitivites.&#xA;" DisplayName="Add output folder - if not exist" sap:VirtualizedContainerService.HintSize="660.8,1231.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If Condition="[in_Config(&quot;ProcessFolder&quot;).ToString.Contains(&quot;\Data\Output&quot;)]" DisplayName="If - Create Output folder" sap:VirtualizedContainerService.HintSize="619.2,332.8" sap2010:WorkflowViewState.IdRef="If_2">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="375.2,173.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_Config(&quot;OutputFolderPath&quot;).ToString]" />
+          </Sequence>
+        </If.Else>
+      </If>
+      <If Condition="[in_Config(&quot;OutputFolderPath&quot;).ToString.Contains(&quot;\.docx payslips&quot;)]" DisplayName="If - Create Docx folder" sap:VirtualizedContainerService.HintSize="619.2,332.8" sap2010:WorkflowViewState.IdRef="If_3">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_30">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="375.2,173.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[in_Config(&quot;.docxPath&quot;).ToString]" />
+          </Sequence>
+        </If.Else>
+      </If>
+      <If Condition="[in_Config(&quot;OutputFolderPath&quot;).ToString.Contains(&quot;\PDF Files&quot;)]" DisplayName="If - Creates PDF folder" sap:VirtualizedContainerService.HintSize="619.2,332.8" sap2010:WorkflowViewState.IdRef="If_4">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="375.2,173.6" sap2010:WorkflowViewState.IdRef="Sequence_33">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[in_Config(&quot;PDF Folder Path&quot;).ToString]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <Sequence DisplayName="Edit word payslip template, save and convert it to PDF document" sap:VirtualizedContainerService.HintSize="660.8,4002.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="[Environment.CurrentDirectory + &quot;\Payslip Template.docx&quot;]" Name="CopyWordTemp" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[CopyWordTemp]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="508.8,160" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[in_Config(&quot;Word Template Path&quot;).ToString]" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Month and Year" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_1" Replace="[in_TransactionItem(3).ToString + &quot; &quot; + in_TransactionItem(4).ToString]" Search="_m_o_n_t_h" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Name" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_2" Replace="[in_TransactionItem(0).ToString]" Search="_n_a_m_e" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Employee ID" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_3" Replace="[in_TransactionItem(1).ToString]" Search="_e_m_p_i_d" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Department" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_4" Replace="[in_TransactionItem(5).ToString]" Search="_d_e_p_t" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Designation" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_5" Replace="[in_TransactionItem(6).ToString]" Search="_d_e_s_i_g" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - PAN No" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_6" Replace="[in_TransactionItem(7).ToString]" Search="_p_a_n" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Days Payable" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_7" Replace="[in_TransactionItem(&quot;Days Payable&quot;).ToString]" Search="_dy_pay" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Mode of Pay" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_8" Replace="[in_TransactionItem(&quot;Mode of Pay&quot;).ToString]" Search="_md_pay" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - A/C No" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_9" Replace="[in_TransactionItem(&quot;A/C No&quot;).ToString]" Search="_a/c_no" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Basic Salary" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_10" Replace="[in_TransactionItem(&quot;Basic Salary&quot;).ToString]" Search="_b_a_s_i_c" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - HRA" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_11" Replace="[in_TransactionItem(&quot;HRA&quot;).ToString]" Search="_h_r_a" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Conveyance Allowance" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_12" Replace="[in_TransactionItem(&quot;Conveyance Allowance&quot;).ToString]" Search="_c_o_n_v" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Special Allowance" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_13" Replace="[in_TransactionItem(&quot;Special Allowance&quot;).ToString]" Search="_s_p_l" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Total Earnings" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_14" Replace="[in_TransactionItem(&quot;Total Earnings&quot;).ToString]" Search="_Tt_earn" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - PF" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_15" Replace="[in_TransactionItem(&quot;PF&quot;).ToString]" Search="_p_f" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Professional Tax" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_16" Replace="[in_TransactionItem(&quot;Professional Tax&quot;).ToString]" Search="_p_r_o_f" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Income Tax" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_17" Replace="[in_TransactionItem(&quot;Income Tax&quot;).ToString]" Search="_i_n_" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Total Deductions" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_18" Replace="[in_TransactionItem(&quot;Total Deductions&quot;).ToString]" Search="_Tt_deduc" />
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - Net Pay" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_19" Replace="[(Cint(in_TransactionItem(&quot;Total Earnings&quot;)) - (Cint(in_TransactionItem(&quot;Total Deductions&quot;)))).ToString]" Search="_n_e_t" />
+      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey - Save As" sap:VirtualizedContainerService.HintSize="508.8,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f12" KeyModifiers="None" SpecialKey="True">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="30272de7-7b34-4f42-917d-58a9ed5431d2">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
+      <p:DocumentReplaceText Found="{x:Null}" DisplayName="Replace Text - File Name" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="DocumentReplaceText_20" Replace="[in_Config(&quot;.docxPath&quot;).ToString + in_TransactionItem(0).ToString+ &quot;.docx&quot;]" Search="Payslip Template.docx" />
+      <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[CopyWordTemp]" sap:VirtualizedContainerService.HintSize="508.8,523.2" sap2010:WorkflowViewState.IdRef="WordApplicationScope_5">
+        <p:WordApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WordDocument">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,413.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <p:WordSaveAs DisplayName="Save Document As" FilePath="[in_Config(&quot;.docxPath&quot;).ToString + in_TransactionItem(0).ToString + &quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="433.6,169.6" sap2010:WorkflowViewState.IdRef="WordSaveAs_1" />
+              <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[in_Config(&quot;PDF Folder Path&quot;).ToString + in_TransactionItem(0).ToString + &quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="433.6,111.2" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+            </Sequence>
+          </ActivityAction>
+        </p:WordApplicationScope.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </p:WordApplicationScope>
+      <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" DisplayName="Delete - copied word template file" sap:VirtualizedContainerService.HintSize="508.8,134.4" sap2010:WorkflowViewState.IdRef="Delete_2" Path="[CopyWordTemp]" />
+      <ui:WriteCell sap2010:Annotation.AnnotationText="Write Attachment File Name to the status excel file.&#xA;" Cell="[&quot;F&quot; + (in_TransactionNumber+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="508.8,160" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[in_TransactionItem(0).ToString + &quot;.pdf&quot;]" WorkbookPath="[in_Config(&quot;Status Excel File&quot;).ToString]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:WriteCell>
+    </Sequence>
+  </Sequence>
+</Activity>

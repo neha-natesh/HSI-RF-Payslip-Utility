@@ -1,0 +1,70 @@
+﻿Time,Level,Robot name,Process,Hostname,Host Identity,Message
+4/24/2022 6:49:22 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,PayslipReFramework execution started
+4/24/2022 6:49:24 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,The primary screen resolution is: 1920 x 1080
+4/24/2022 6:49:26 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:49:26 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 111
+4/24/2022 6:49:26 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:49:26 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Throw - Columns 12: Input has to be digits
+4/24/2022 6:49:26 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Invoke 2. readEmpData workflow: Input has to be digits
+4/24/2022 6:49:27 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Email not sent to Neha Natesh due to errors in the input data.
+4/24/2022 6:49:27 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Business rule exception.Input has to be digits
+4/24/2022 6:49:27 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:49:27 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 112
+4/24/2022 6:49:27 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:49:29 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Audit: Using Word. Document: C:\Users\Neha\.nuget\packages\goeasyprojectinreframework_nehanatesh\1.0.5\lib\net45\Payslip Template.docx
+4/24/2022 6:49:49 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Payslip email sent to Simple kapoor
+4/24/2022 6:49:49 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Transaction Successful.
+4/24/2022 6:49:49 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:49:49 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 113
+4/24/2022 6:49:49 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:49:51 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Audit: Using Word. Document: C:\Users\Neha\.nuget\packages\goeasyprojectinreframework_nehanatesh\1.0.5\lib\net45\Payslip Template.docx
+4/24/2022 6:50:06 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Payslip email sent to Dimple Khanna
+4/24/2022 6:50:06 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Transaction Successful.
+4/24/2022 6:50:06 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 114
+4/24/2022 6:50:06 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:50:06 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:50:08 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Audit: Using Word. Document: C:\Users\Neha\.nuget\packages\goeasyprojectinreframework_nehanatesh\1.0.5\lib\net45\Payslip Template.docx
+4/24/2022 6:50:22 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Payslip email sent to HSInnings
+4/24/2022 6:50:22 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Transaction Successful.
+4/24/2022 6:50:22 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:50:22 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 115
+4/24/2022 6:50:22 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:50:22 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Throw - Columns 16: Input has to be digits
+4/24/2022 6:50:22 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Invoke 2. readEmpData workflow: Input has to be digits
+4/24/2022 6:50:22 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Email not sent to HSInningsEmail 2 due to errors in the input data.
+4/24/2022 6:50:22 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Business rule exception.Input has to be digits
+4/24/2022 6:50:23 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:50:23 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 116
+4/24/2022 6:50:23 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:50:25 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Audit: Using Word. Document: C:\Users\Neha\.nuget\packages\goeasyprojectinreframework_nehanatesh\1.0.5\lib\net45\Payslip Template.docx
+4/24/2022 6:50:40 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Payslip email sent to Najma Fathima
+4/24/2022 6:50:40 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Transaction Successful.
+4/24/2022 6:50:40 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 117
+4/24/2022 6:50:40 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:50:40 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:50:42 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Audit: Using Word. Document: C:\Users\Neha\.nuget\packages\goeasyprojectinreframework_nehanatesh\1.0.5\lib\net45\Payslip Template.docx
+4/24/2022 6:50:56 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Payslip email sent to Sana Khan
+4/24/2022 6:50:56 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Transaction Successful.
+4/24/2022 6:50:56 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:50:56 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 118
+4/24/2022 6:50:56 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:50:58 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Audit: Using Word. Document: C:\Users\Neha\.nuget\packages\goeasyprojectinreframework_nehanatesh\1.0.5\lib\net45\Payslip Template.docx
+4/24/2022 6:51:12 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Payslip email sent to Sufain Baig
+4/24/2022 6:51:12 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Transaction Successful.
+4/24/2022 6:51:13 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:51:13 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 119
+4/24/2022 6:51:13 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:51:13 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Throw: Email ID does not contain @ or .com
+4/24/2022 6:51:13 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Invoke 2. readEmpData workflow: Email ID does not contain @ or .com
+4/24/2022 6:51:13 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Email not sent to Muhammed Baig due to errors in the input data.
+4/24/2022 6:51:13 AM,Error,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Business rule exception.Email ID does not contain @ or .com
+4/24/2022 6:51:13 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:51:13 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Processing Employee ID: 120
+4/24/2022 6:51:13 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Started Process
+4/24/2022 6:51:15 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Audit: Using Word. Document: C:\Users\Neha\.nuget\packages\goeasyprojectinreframework_nehanatesh\1.0.5\lib\net45\Payslip Template.docx
+4/24/2022 6:51:30 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Payslip email sent to Shradha Sarap
+4/24/2022 6:51:30 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Transaction Successful.
+4/24/2022 6:51:30 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Get the transaction item
+4/24/2022 6:51:30 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Process finished due to no more transaction data
+4/24/2022 6:51:35 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,Status Report emailed to the HR. Process complete.
+4/24/2022 6:51:35 AM,Info,neha.natesh88@gmail.com-unattended,PayslipReFramework,NEHA,NEHA\Neha,PayslipReFramework execution ended
